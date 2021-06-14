@@ -1,0 +1,7 @@
+#progressBorder {
+  transform: rotate(45deg);
+}
+
+#progress {
+  transform: rotate(-45deg);
+}
