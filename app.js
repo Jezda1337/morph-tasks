@@ -12,7 +12,7 @@ firstName.addEventListener("change", () => {
     progress.textContent = parseInt(progress.textContent) + 25 + "%";
   } else {
     steps[0].innerHTML = "1";
-    progressBorder.style.borderTop = "2px solid white";
+    progressBorder.style.borderTop = "2px solid rgb(158, 183, 215)";
     progress.textContent = parseInt(progress.textContent) - 25 + "%";
   }
 });
@@ -26,7 +26,7 @@ lastName.addEventListener("change", () => {
     progress.textContent = parseInt(progress.textContent) + 25 + "%";
   } else {
     steps[1].innerHTML = "2";
-    progressBorder.style.borderRight = "2px solid white";
+    progressBorder.style.borderRight = "2px solid rgb(158, 183, 215)";
     progress.textContent = parseInt(progress.textContent) - 25 + "%";
   }
 });
@@ -40,7 +40,7 @@ email.addEventListener("change", () => {
     progress.textContent = parseInt(progress.textContent) + 25 + "%";
   } else {
     steps[2].innerHTML = "3";
-    progressBorder.style.borderBottom = "2px solid white";
+    progressBorder.style.borderBottom = "2px solid rgb(158, 183, 215)";
     progress.textContent = parseInt(progress.textContent) - 25 + "%";
   }
 });
