@@ -14,61 +14,253 @@
     <link rel="stylesheet" href="./tailwind.css" />
     <script defer src="/app.js"></script>
   </head>
+
   <body>
     <section class="max-w-md mx-auto">
       <header class="p-5 w-100 bg-custom-blue flex h-32 items-center">
-        <div class="justify-center items-center flex w-8 h-8 text-white text-xs rounded-full border-2 border-custom-white" id="progressBorder">
-            <p id="progress">0%</p>
+        <div class="relative flex items-center justify-center w-8 h-8">
+          <div
+            class="
+              w-full
+              h-full
+              border-2 border-custom-gray-light
+              rounded-full
+              transform
+              rotate-45
+            "
+            id="progressBorder"
+          ></div>
+          <span class="text-white text-xs absolute" id="progress">0%</span>
         </div>
         <div class="mx-3">
           <p class="text-xs text-white font-bold">New York State</p>
-          <h1 class="text-xl text-white leading-5 font-bold">Request for Contact</h2>
+          <h1 class="text-xl text-white leading-5 font-bold">
+            Request for Contact
+          </h1>
         </div>
       </header>
       <main class="px-5 py-5 bg-custom-white">
         <form class="my-5 w-full">
-            <div class="flex">
-                <div class="w-7 h-7 flex items-center justify-center text-center text-custom-blue shadow-lg bg-white rounded-full text-xs" id="steps">1</div>
-                <div class="ml-5 w-full relative border-b-2 focus-within:border-custom-gray-secondary">
-                    <input id="firstName" type="text" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent focus-within:text-custom-blue text-custom-gray-dark">
-                    <label for="firstName" class="absolute top-0 -z-2 duration-300 origin-0 text-custom-gray-dark">First Name</label>
-                  </div>
+          <div class="flex">
+            <div
+              class="
+                w-7
+                h-7
+                flex
+                items-center
+                justify-center
+                text-center text-custom-blue
+                shadow-lg
+                bg-white
+                rounded-full
+                text-xs
+              "
+              id="steps"
+            >
+              1
             </div>
+            <div
+              class="
+                ml-5
+                w-full
+                relative
+                border-b-2
+                focus-within:border-custom-gray-secondary
+              "
+            >
+              <input
+                id="firstName"
+                type="text"
+                placeholder=" "
+                class="
+                  block
+                  w-full
+                  appearance-none
+                  focus:outline-none
+                  bg-transparent
+                  focus-within:text-custom-blue
+                  text-custom-gray-dark
+                "
+              />
+              <label
+                for="firstName"
+                class="
+                  absolute
+                  top-0
+                  -z-2
+                  duration-300
+                  origin-0
+                  text-custom-gray-dark
+                "
+                >First Name</label
+              >
+            </div>
+          </div>
 
-            <div class="flex mt-16">
-                <div class="w-7 h-7 flex items-center justify-center text-center text-custom-blue shadow-lg bg-white rounded-full text-xs" id="steps">2</div>
-                <div class="ml-5 w-full relative border-b-2 focus-within:border-custom-gray-secondary">
-                    <input type="text" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent focus-within:text-custom-blue text-custom-gray-dark" id="lastName">
-                    <label for="lastname" class="absolute top-0 duration-300 origin-0 text-custom-gray-dark">Last Name</label>
-                  </div>
+          <div class="flex mt-16">
+            <div
+              class="
+                w-7
+                h-7
+                flex
+                items-center
+                justify-center
+                text-center text-custom-blue
+                shadow-lg
+                bg-white
+                rounded-full
+                text-xs
+              "
+              id="steps"
+            >
+              2
             </div>
+            <div
+              class="
+                ml-5
+                w-full
+                relative
+                border-b-2
+                focus-within:border-custom-gray-secondary
+              "
+            >
+              <input
+                type="text"
+                placeholder=" "
+                class="
+                  block
+                  w-full
+                  appearance-none
+                  focus:outline-none
+                  bg-transparent
+                  focus-within:text-custom-blue
+                  text-custom-gray-dark
+                "
+                id="lastName"
+              />
+              <label
+                for="lastname"
+                class="
+                  absolute
+                  top-0
+                  duration-300
+                  origin-0
+                  text-custom-gray-dark
+                "
+                >Last Name</label
+              >
+            </div>
+          </div>
 
-            <div class="flex mt-16">
-                <div class="w-7  h-7 flex items-center justify-center text-center text-custom-blue shadow-lg bg-white rounded-full text-xs" id="steps">3</div>
-                <div class="ml-5 w-full relative border-b-2 focus-within:border-custom-gray-secondary">
-                    <input type="text" placeholder=" " class="block w-full appearance-none focus:outline-none bg-transparent focus-within:text-custom-blue text-custom-gray-dark" id="email">
-                    <label for="emailaddress" class="absolute top-0 duration-300 origin-0 text-custom-gray-dark">Email Address</label>
-                  </div>
+          <div class="flex mt-16">
+            <div
+              class="
+                w-7
+                h-7
+                flex
+                items-center
+                justify-center
+                text-center text-custom-blue
+                shadow-lg
+                bg-white
+                rounded-full
+                text-xs
+              "
+              id="steps"
+            >
+              3
             </div>
+            <div
+              class="
+                ml-5
+                w-full
+                relative
+                border-b-2
+                focus-within:border-custom-gray-secondary
+              "
+            >
+              <input
+                type="email"
+                placeholder=" "
+                class="
+                  email-input
+                  block
+                  w-full
+                  appearance-none
+                  focus:outline-none
+                  bg-transparent
+                  focus-within:text-custom-blue
+                  text-custom-gray-dark
+                "
+                id="email"
+              />
+              <label
+                for="emailaddress"
+                class="
+                  email
+                  absolute
+                  top-0
+                  duration-300
+                  origin-0
+                  text-custom-gray-dark
+                "
+                >Email Address</label
+              >
+            </div>
+          </div>
 
-            <div class="flex mt-16">
-                <div class="w-7 h-7 flex items-center justify-center text-center text-custom-blue shadow-lg bg-white rounded-full text-xs" id="steps">4</div>
-                <p class="text-custom-gray-dark ml-5">What is the best time to contact you?</p>
+          <div class="flex mt-16">
+            <div
+              class="
+                w-7
+                h-7
+                flex
+                items-center
+                justify-center
+                text-center text-custom-blue
+                shadow-lg
+                bg-white
+                rounded-full
+                text-xs
+              "
+              id="steps"
+            >
+              4
             </div>
-            <div class="flex-col items-center justify-center ml-16 mt-5">
-                <div>
-                    <input class="p-10" type="radio" id="contact" name="contact">
-                    <label class="text-sm text-custom-gray-dark" for="contact">Monday 3pm</label>
-                </div>
-                <div>
-                    <input class="" type="radio" id="contact1" name="contact">
-                    <label class="text-sm text-custom-gray-dark" for="contact1">Tuesday 3pm</label>
-                </div>
+            <p class="text-custom-gray-dark ml-5">
+              What is the best time to contact you?
+            </p>
+          </div>
+          <div class="flex-col items-center justify-center ml-16 mt-5">
+            <div>
+              <input class="p-10" type="radio" id="contact" name="contact" />
+              <label class="text-sm text-custom-gray-dark" for="contact"
+                >Monday 3pm</label
+              >
             </div>
+            <div>
+              <input class="" type="radio" id="contact1" name="contact" />
+              <label class="text-sm text-custom-gray-dark" for="contact1"
+                >Tuesday 3pm</label
+              >
+            </div>
+          </div>
 
-            <button class="mt-16 w-full bg-custom-blue hover:bg-blue-400 text-white font-bold py-2 px-4  rounded">
-                Submit
-              </button>
+          <button
+            class="
+              mt-16
+              w-full
+              bg-custom-blue
+              hover:bg-blue-400
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded
+            "
+          >
+            Submit
+          </button>
         </form>
       </main>
     </section>
