@@ -31,7 +31,7 @@ lastName.addEventListener("change", () => {
   }
 });
 
-const email = document.querySelector("#email");
+const email = document.querySelector("#emailaddress");
 email.addEventListener("change", () => {
   if (email.value != "") {
     progressBorder.style.borderBottom = "2px solid white";

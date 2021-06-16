@@ -15,9 +15,30 @@
     <script defer src="/app.js"></script>
   </head>
 
-  <body>
+  <body
+    class="
+      flex
+      justify-center
+      items-center
+      w-full
+      min-h-screen
+      bg-gradient-to-r
+      from-blue-500
+      to-green-400
+    "
+  >
     <section class="max-w-md mx-auto">
-      <header class="p-5 w-100 bg-custom-blue flex h-32 items-center">
+      <header
+        class="
+          p-5
+          w-100
+          bg-custom-blue
+          flex
+          h-32
+          items-center
+          rounded-tl-md rounded-tr-md
+        "
+      >
         <div class="relative flex items-center justify-center w-8 h-8">
           <div
             class="
@@ -39,7 +60,7 @@
           </h1>
         </div>
       </header>
-      <main class="px-5 py-5 bg-custom-white">
+      <main class="px-5 py-5 bg-custom-white rounded-bl-md rounded-br-md">
         <form class="my-5 w-full">
           <div class="flex">
             <div
@@ -50,7 +71,7 @@
                 items-center
                 justify-center
                 text-center text-custom-blue
-                shadow-lg
+                shadow
                 bg-white
                 rounded-full
                 text-xs
@@ -65,7 +86,7 @@
                 w-full
                 relative
                 border-b-2
-                focus-within:border-custom-gray-secondary
+                focus-within:border-custom-blue
               "
             >
               <input
@@ -106,7 +127,7 @@
                 items-center
                 justify-center
                 text-center text-custom-blue
-                shadow-lg
+                shadow
                 bg-white
                 rounded-full
                 text-xs
@@ -121,7 +142,7 @@
                 w-full
                 relative
                 border-b-2
-                focus-within:border-custom-gray-secondary
+                focus-within:text-custom-blue focus-within:border-custom-blue
               "
             >
               <input
@@ -162,7 +183,7 @@
                 items-center
                 justify-center
                 text-center text-custom-blue
-                shadow-lg
+                shadow
                 bg-white
                 rounded-full
                 text-xs
@@ -171,21 +192,13 @@
             >
               3
             </div>
-            <div
-              class="
-                ml-5
-                w-full
-                relative
-                border-b-2
-                focus-within:border-custom-gray-secondary
-              "
-            >
+            <div class="ml-5 w-full relative border-b-2 focus-within:border-custom-blue">
               <input
                 type="email"
                 placeholder=" "
                 class="
-                  block
                   w-full
+                  block
                   appearance-none
                   focus:outline-none
                   bg-transparent
@@ -197,7 +210,6 @@
               <label
                 for="emailaddress"
                 class="
-                  email
                   absolute
                   top-0
                   duration-300
@@ -218,7 +230,7 @@
                 items-center
                 justify-center
                 text-center text-custom-blue
-                shadow-lg
+                shadow
                 bg-white
                 rounded-full
                 text-xs
